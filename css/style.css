@@ -8,23 +8,14 @@ body {
   color: #000;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 h4 {
   margin: 0;
 }
 
 a:link {
   color: #000;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 .about a:hover {
@@ -89,9 +80,6 @@ nav li a {
   display: block;
   min-width: 205px;
   height: 50px;
-  border: 1px solid #000;
-  border-radius: 1em;
-  padding-left: 10px;
   text-align: left;
   line-height: 50px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -103,27 +91,7 @@ nav li a {
 /* Hover state for top level links */
 
 nav li:hover a {
-  background: #d8d8d8;
-}
-
-/* Style for dropdown links */
-
-nav li:hover ul a {
-  background: #fff;
-  color: #000;
-  height: 40px;
-  border: none;
-  border-radius: 0;
-  text-align: left;
-  line-height: 40px;
-}
-
-/* Hover state for dropdown links */
-
-nav li:hover ul a:hover {
-  background: #fff;
-  color: #000;
-  text-decoration: underline;
+  text-decoration-line: underline;
 }
 
 /* Hide dropdown links until they are needed */

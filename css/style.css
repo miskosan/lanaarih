@@ -129,13 +129,6 @@ iframe {
   margin: 1.5em auto;
 }
 
-.masonry {
-  margin: 1.5em 0;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
-  column-gap: 1em;
-  font-size: 0.85em;
-}
 
 .item {
   display: inline-block;
@@ -163,8 +156,31 @@ iframe {
 /* ** GALLERY ** */
 
 .container {
+margin: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left-column {
+  background-color: blue;
+  height: auto;
+}
+
+.right-column {
+  background-color: green;
+  height: auto;
 }
 
 @media (min-width: 770px) {

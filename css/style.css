@@ -12,16 +12,12 @@ a:link {
   font-weight: 400;
 }
 
-.about {
-  font-size: 1.3em;
-}
 .about a:hover {
   color: #00f;
 }
 
 .about a:visited {
   color: #f00;
-  font-weight: bold;
 }
 
 .module {

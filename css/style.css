@@ -2,7 +2,7 @@
 
 body {
   font: 1em/1.1 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 2.2em;
   background: #fff;
   color: #000;
 }
@@ -37,6 +37,26 @@ a:link {
   padding-left: 0;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 33%;
+  gap: 30px;
+}
+
+.box {
+}
+
+.box p {
+  margin-top: 0px;
+}
+.box img {
+  width: 500px;
+}
 /* ** NAVIGATION ** */
 
 nav {
@@ -58,14 +78,11 @@ nav li {
   margin-right: 1px;
 }
 
-/* Style for menu links */
-
 nav li a {
   display: block;
-  min-width: 250px;
+  min-width: 350px;
   height: 50px;
   text-align: left;
-  font-size: 2.3em;
   line-height: 50px;
   color: #000;
   background: #fff;
@@ -89,45 +106,6 @@ footer {
   padding-top: 3em;
 }
 
-/* Responsive Styles */
-
-@media screen and (max-width: 760px) {
-  /* Make dropdown links appear inline */
-  ul {
-    position: static;
-    /* display: none; */
-  }
-
-  /* Make all menu links full width */
-  ul li,
-  li a {
-    width: 100%;
-  }
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0em;
-}
-
-.container {
-  display: grid;
-  /* grid-template-columns: 3fr 2fr; */
-  grid-template-columns: minmax(min-content, max-content) 300px;
-  gap: 30px;
-}
-
-.box {
-  font-size: 1.2em;
-}
-
-.box p {
-  font-size: 1.3em;
-  margin-top: 0px;
-}
-.box img {
-  width: 500px;
-}
 @media only screen and (max-width: 800px) {
   .container {
     display: grid;
@@ -140,7 +118,11 @@ footer {
   }
 
   .box-top {
-    padding-top: 60px;
+    padding-top: 40px;
+  }
+
+  .img-desc p {
+    padding-bottom: 50px;
   }
   /* Make all menu links full width */
   ul li,

@@ -1,10 +1,43 @@
-/* ** BASIC STYLING ** */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-sizing: normal;
+}
 
 body {
+  margin: 0;
   font: 1em/1.1 "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2.2em;
   background: #fff;
   color: #000;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+img,
+svg,
+video,
+canvas {
+  height: auto;
+}
+
+pre {
+  white-space: pre-wrap;
 }
 
 a:link {
@@ -127,6 +160,6 @@ footer {
   }
 
   .about p {
-    font-size: 1em !important;
+    font-size: 1em;
   }
 }
